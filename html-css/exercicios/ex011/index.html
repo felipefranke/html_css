@@ -8,11 +8,23 @@
 </head>
 <body>
     <h1>Imagem dinâmica</h1>
-    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
-    <picture>
-        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
-        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
-        <img src="img/foto-g.png" alt="Imagem flexível">
-    </picture>
+        <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+        <img src="img/foto-p.png" alt="Imagem pequena" type="img/png">
+        <picture>
+            <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+            <img src="img/foto-g.png" alt="Imagem flexível">
+        </picture>
+    <h1>Reproduzindo áudio</h1>
+        <p>Vamos aprender a reproduzir áudio</p>
+        <audio src="midia/audio.mp3" controls></audio>
+        <!--autoplay-->
+        <!-- MP3, WAV - OGG -->
+        <audio preload="metadata" controls>
+            <source src="midia/audio.mp3" type="audio/mpeg">
+            <source src="midia/audio.ogg" type="audio/ogg">
+            <source src="midia/audio.mpeg" type="audio/mpeg">
+            <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/audio.mp3">Clique aqui para baixar o arquivo .mp3</a>.</p>
+        </audio>
 </body>
 </html>
