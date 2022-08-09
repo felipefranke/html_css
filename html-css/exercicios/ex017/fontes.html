@@ -6,17 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: Work Sans, Arial, Helvetica, sans-serif;
             font-size: 1em;
+            font-weight: lighter;
+            font-style: italic;
+            /* text-decoration: underline; */
+            /*  pesos literias: lighter, normal, bold, bolder
+                pesos absolutos: 100 - 900*/
+
             /* 16 pixels normalmente é igual a 1em */
+            
             /* font-size:
                         medidas absolutas: cm, mm, in (inchies), px, pt (ponto) pc (pica)
                         medidas relativas: em (altura da letra "M"), ex (altura da letra "x"), rem (em relativo ao "EM" da fonte definina no body), vw (Viewport = relativo à largura da tela em %), vh (relativo à altura da tela em %), %
                          */
         }
+        h1 {
+            /* font-family: Work Sans, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        /*  shorthand font: escrevendo todos os parametros em uma única linha
+            Ordem de escrita: 
+                font-style -> font-weight -> font-size -> font-family  */
+
+        
+        
         /* h1, h2 {
             font-family:'Times New Roman', Times, serif;
         } */
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
     </style>
     <title>Fontes em CSS</title>
 </head>
