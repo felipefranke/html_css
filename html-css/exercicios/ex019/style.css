@@ -4,20 +4,36 @@ O que em HTML é "id", em css é "#"
 O que em HTML é class, em css é "."
 */
 body {
-    background-color: rgb(155, 226, 159);
+    background-color: #8029d683;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-    color: rgb(21, 54, 23);
+    color: #6921B0;
 }
 
 /* seletor personalizado */
 h1#principal {
     text-align: center;
-    background-color: green;
+    background-color: #7F29D6;
     color: white;
 }
 
 h2 {
-    color: rgb(8, 102, 13);
+    color: #6921B0;
+}
+.basico {
+    background-color: #3ecf05;
+    color: white;
+    font-weight: bold;
+}
+.intermediario {
+    background-color: #d2e00d;
+    color: white;
+}
+.avancado {
+    background-color: #da0b0b;
+    color: white;
+}
+.destaque {
+    background-color: #889114;
 }
