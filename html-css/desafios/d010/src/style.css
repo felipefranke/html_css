@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "idroid";
+    src: url("../fonts/idroid.otf");
+}
+
+body {
+    background-color: rgba(107, 180, 119, 0.692);
+}
+main {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+main > h1 {
+    font-family: "idroid", sans-serif;
+}
+main > p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 26px;
+}
