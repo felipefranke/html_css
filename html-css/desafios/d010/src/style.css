@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: #83E0AC;
+    background-color: #c5ebd6;
 }
 header{
     background: rgb(60,220,132);
@@ -100,6 +100,10 @@ main a:link, a:visited, a:active {
     color: #125332;
     text-decoration: none;
     font-weight: bold;
+    background-color: #5caf7d77;
+}
+Main a:hover{
+    text-decoration: underline;
 }
 picture img {
     width: 100%;
