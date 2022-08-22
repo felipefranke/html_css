@@ -29,36 +29,61 @@ body {
     background-color: var(--cor0);
     font-family: var(--font-body);
 }
-header{
+#header {
     background: radial-gradient(circle, var(--cor2) 58%, var(--cor4) 100%);
-    height: 140px;
     width: 100%;
     padding: 15px 10px 10px 0px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.438);
+    padding-bottom: 8px;
+}
+header{
     color: white;
+    text-align: center;
 }
 header > h1 {
     font-family: var(--font-header);
     text-transform: uppercase;
-    text-align: center;
     font-size: 2.7em;
     font-weight: 100;
     margin-bottom: 20px;
+    text-shadow: 3px 3px #000000a6;
 }
 
 header > p {
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    width: 400px;
+    max-width: 400px;
     margin: 0px auto 20px auto;
     font-size: 14px;
+    text-shadow: 3px 3px 5px #000000a6;
 }
 nav {
-    padding-left: 20px;
-    background: radial-gradient(circle, var(--cor2) 58%, var(--cor4) 100%);
+    width: 100%;
+    padding-left: 15px;
+    font-size: 1.5em;
 }
-nav a:link, a:active {
-    font-family: Arial, Helvetica, sans-serif;
+/* nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: small;
+    margin-right: 10px;
+    font-weight: bold;
+} */
+nav a.nav {
+    text-decoration: none;
+    color: #fff;
+    font-size: small;
+    margin-right: 10px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a.nav:hover {
+    background-color: var(--cor1) ;
+    color: var(--cor4);
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+/* nav a:link, a:active {
     text-decoration: none;
     color: #fff;
     font-size: small;
@@ -66,17 +91,17 @@ nav a:link, a:active {
     font-weight: bold;
 }
 nav a:visited {
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #fff;
     font-size: small;
     margin-right: 10px;
     font-weight: bold;
-}
+} */
 main {
     background-color: white;
     max-width: 900px;
-    margin: 0px auto 10px auto;
+    min-width: 65%;
+    margin: auto;
     padding: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.712);
     border-radius: 0 0 5px 5px;
@@ -84,35 +109,39 @@ main {
 article > h1 {
     font-family: "idroid", sans-serif;
     color: var(--cor5);
-    margin-bottom: 20px;
 }
 article > h2 {
-    background-image: linear-gradient(to right, #C3E9D4, #FFFFFF);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
     color: var(--cor4);
     font-family: "idroid", sans-serif;
-    margin: 20px 0px;
     padding-left: 10px;
+    font-size: 1.3em;
 }
 article > p {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     text-align: justify;
     text-indent: 30px;
     line-height: 1.6em;
     font-size: 14px;
+    margin: 20px 0;
 }
 article strong {
     color: var(--cor4);
+    font-weight: bold;
 }
 article i {
     color: #555;
     margin-left: -25px;
+}
+a.externo::after{
+    content: '\00A0\1F517';
 }
 article a:link, a:visited, a:active {
     color: var(--cor4);
     text-decoration: none;
     font-weight: bold;
     background-color: var(--cor0);
+    padding: 2px 6px;
 }
 article a:hover{
     text-decoration: underline;
@@ -120,17 +149,16 @@ article a:hover{
 picture img {
     width: 100%;
     display:block;
-    margin: 10px auto;
 }
 
-#bugdroid {
-    width: 300px;
+.bugdroid {
+    max-width: 350px;
     display:block;
     margin: 0px auto
 }
 #iframes {
     background-color: var(--cor5);
-    margin: 15px -20px;
+    /* margin: 15px -20px; */
     padding: 20px;
 }
 aside {
@@ -138,6 +166,7 @@ aside {
     border-radius: 10px;
     width: 100%;
     padding-bottom: 10px;
+    box-shadow: 3px 3px 8px #000000a6;
 
 }
 aside > h2 {
@@ -157,15 +186,20 @@ aside > p {
     line-height: 1.6em;
     margin: 10px 0px;
 }
+aside ul {
+    list-style-position: inside;
+    columns: 2;
+    margin-left: 25px;
+    font-size: small;
+
+}
+aside li {
+    list-style-type:'\2714\00A0\00A0';
+}
 aside td {
     width: 600px;
 }
 
-aside li {
-    list-style-type: disc;
-    font-size: small;
-    margin-left: 25px;
-}
 footer {
     background-color: var(--cor5);
     height: 22px;
@@ -181,10 +215,14 @@ footer > p {
     font-size: 10px;
     text-align: center;
 }
-footer {
+footer a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    background-color: none;
+}
+footer a:visited {
+    color: #fff;
 }
 /* main {
     background-color: white;
