@@ -33,7 +33,7 @@ body {
     background: radial-gradient(circle, var(--cor2) 58%, var(--cor4) 100%);
     width: 100%;
     padding: 15px 10px 10px 0px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.438);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
     padding-bottom: 8px;
 }
 header{
@@ -44,7 +44,7 @@ header > h1 {
     font-family: var(--font-header);
     text-transform: uppercase;
     font-size: 2.7em;
-    font-weight: 100;
+    font-weight: normal;
     margin-bottom: 20px;
     text-shadow: 3px 3px #000000a6;
 }
@@ -109,6 +109,7 @@ main {
 article > h1 {
     font-family: "idroid", sans-serif;
     color: var(--cor5);
+    font-weight: normal;
 }
 article > h2 {
     background-image: linear-gradient(to right, var(--cor0), transparent);
@@ -116,6 +117,7 @@ article > h2 {
     font-family: "idroid", sans-serif;
     padding-left: 10px;
     font-size: 1.3em;
+    font-weight: normal;
 }
 article > p {
     font-weight: 500;
@@ -154,13 +156,23 @@ picture img {
 .bugdroid {
     max-width: 350px;
     display:block;
-    margin: 0px auto
+    margin: 0px auto 30px 0px;
 }
-#iframes {
+section.iframes {
     background-color: var(--cor5);
-    /* margin: 15px -20px; */
+    margin: 15px -20px 30px -20px;
     padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+
 }
+section.iframes > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+} 
 aside {
     background-color: var(--cor0);
     border-radius: 10px;
