@@ -12,13 +12,13 @@ body {
 }
 
 header {
-    width: 100%;
+    /* width: 100%; */
     background-color: black;
     text-align: center;
 }
 
 header div {
-    width: 100%;
+    /* width: 100%; */
 }
 
 header h1 {
@@ -60,7 +60,7 @@ main p {
     background-size: cover;
     background-attachment: fixed;
     background-position: center right;
-    width: 100vw;
+    /* width: 100%; */
     box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.623);
 }
 .imagem02 {
@@ -68,13 +68,13 @@ main p {
     background-size: cover;
     background-attachment: fixed;
     background-position: center right;
-    width: 100vw;
+    /* width: 100%; */
     box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.623);
 }
 .box-imagem {
-    width: 50%;
+    width: 65%;
     background-color: rgba(0, 0, 0, 0.541);
-    padding: 1%;
+    padding: 2%;
 }
 .divisao {
     margin-bottom: 25px;
